@@ -116,7 +116,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:projeto_mab_geomorfologia_lineares</Layers>
+				<Layers>GH:acesso_area_estudo</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -126,7 +126,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:projeto_mab_geomorfologia_lineares</Layers>
+				<Layers>GH:acesso_area_estudo</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -136,7 +136,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:projeto_mab_geomorfologia_poligono_v4</Layers>
+				<Layers>GH:projeto_mab_geomorfologia_lineares</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -146,7 +146,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:projeto_mab_geomorfologia_poligono_v4</Layers>
+				<Layers>GH:projeto_mab_geomorfologia_lineares</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -176,7 +176,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:acesso_area_estudo</Layers>
+				<Layers>GH:projeto_mab_geomorfologia_poligono_v4</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -186,7 +186,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:acesso_area_estudo</Layers>
+				<Layers>GH:projeto_mab_geomorfologia_poligono_v4</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -229,75 +229,20 @@
 				<Layers>GH:mdt_area_estudo</Layers>
 				<Styles></Styles>
 			</TileSet>
+			<CustomLayer>
+				<Name>GH:projeto_mab_geomorfologia_pontuais</Name>
+				<Title>projeto_mab_geomorfologia_pontuais</Title>
+				<Operation type="csv">1</Operation>
+			</CustomLayer>
 		</VendorSpecificCapabilities>
 		<UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"></UserDefinedSymbolization>
 		<Layer>
-			<Layer queryable="1" opaque="0">
-				<Name>GH:projeto_mab_geomorfologia_lineares</Name>
-				<Title>projeto_mab_geomorfologia_lineares</Title>
-				<Abstract>GH:projeto_mab_geomorfologia_lineares ABSTRACT</Abstract>
-				<KeywordList>
-					<Keyword>group:shp:::disabledownload:notListing::maxZoom:7</Keyword>
-				</KeywordList>
-				<SRS>EPSG:4326</SRS>
-				<LatLonBoundingBox minx="-49.796360233766876" miny="-28.82902736736976" maxx="-49.78511243811287" maxy="-28.818946845381696"></LatLonBoundingBox>
-				<BoundingBox SRS="EPSG:4326" minx="617442.6875" miny="6810361.5" maxx="618529.0625" maxy="6811467.5"></BoundingBox>
-				<Style>
-					<Name>1</Name>
-					<Title>1</Title>
-					<Abstract></Abstract>
-					<LegendURL width="20" height="20">
-						<Format>image/png</Format>
-						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=projeto_mab_geomorfologia_lineares"></OnlineResource>
-					</LegendURL>
-				</Style>
-			</Layer>
-			<Layer queryable="1" opaque="0">
-				<Name>GH:projeto_mab_geomorfologia_poligono_v4</Name>
-				<Title>projeto_mab_geomorfologia_poligono_v4</Title>
-				<Abstract>GH:projeto_mab_geomorfologia_poligono_v4 ABSTRACT</Abstract>
-				<KeywordList>
-					<Keyword>group:shp:::disabledownload:notListing::maxZoom:7</Keyword>
-				</KeywordList>
-				<SRS>EPSG:4326</SRS>
-				<LatLonBoundingBox minx="-49.79645345930317" miny="-28.829150022649053" maxx="-49.78511102339829" maxy="-28.818915260769263"></LatLonBoundingBox>
-				<BoundingBox SRS="EPSG:4326" minx="617433.625" miny="6810348.0" maxx="618529.0625" maxy="6811471.0"></BoundingBox>
-				<Style>
-					<Name>1</Name>
-					<Title>1</Title>
-					<Abstract></Abstract>
-					<LegendURL width="20" height="20">
-						<Format>image/png</Format>
-						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=projeto_mab_geomorfologia_poligono_v4"></OnlineResource>
-					</LegendURL>
-				</Style>
-			</Layer>
-			<Layer queryable="1" opaque="0">
-				<Name>GH:hidrografia_area_estudo</Name>
-				<Title>hidrografia_area_estudo</Title>
-				<Abstract>GH:hidrografia_area_estudo ABSTRACT</Abstract>
-				<KeywordList>
-					<Keyword>group:shp:::disabledownload:notListing::maxZoom:7</Keyword>
-				</KeywordList>
-				<SRS>EPSG:4326</SRS>
-				<LatLonBoundingBox minx="-49.79645345930317" miny="-28.829150022649053" maxx="-49.78511102339829" maxy="-28.818915260769263"></LatLonBoundingBox>
-				<BoundingBox SRS="EPSG:4326" minx="617433.625" miny="6810348.0" maxx="618529.0625" maxy="6811471.0"></BoundingBox>
-				<Style>
-					<Name>1</Name>
-					<Title>1</Title>
-					<Abstract></Abstract>
-					<LegendURL width="20" height="20">
-						<Format>image/png</Format>
-						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=hidrografia_area_estudo"></OnlineResource>
-					</LegendURL>
-				</Style>
-			</Layer>
 			<Layer queryable="1" opaque="0">
 				<Name>GH:acesso_area_estudo</Name>
 				<Title>acesso_area_estudo</Title>
 				<Abstract>GH:acesso_area_estudo ABSTRACT</Abstract>
 				<KeywordList>
-					<Keyword>group:shp:::disabledownload:notListing::maxZoom:7</Keyword>
+					<Keyword>group:shp:::disabledownload:notListing::maxZoom:2</Keyword>
 				</KeywordList>
 				<SRS>EPSG:4326</SRS>
 				<LatLonBoundingBox minx="-49.79645345930317" miny="-28.829150022649053" maxx="-49.78511102339829" maxy="-28.818915260769263"></LatLonBoundingBox>
@@ -313,11 +258,71 @@
 				</Style>
 			</Layer>
 			<Layer queryable="1" opaque="0">
+				<Name>GH:projeto_mab_geomorfologia_lineares</Name>
+				<Title>projeto_mab_geomorfologia_lineares</Title>
+				<Abstract>GH:projeto_mab_geomorfologia_lineares ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp:::disabledownload:notListing::maxZoom:2</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-49.796360233766876" miny="-28.82902736736976" maxx="-49.78511243811287" maxy="-28.818946845381696"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="617442.6875" miny="6810361.5" maxx="618529.0625" maxy="6811467.5"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=projeto_mab_geomorfologia_lineares"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:hidrografia_area_estudo</Name>
+				<Title>hidrografia_area_estudo</Title>
+				<Abstract>GH:hidrografia_area_estudo ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp:::disabledownload:notListing::maxZoom:2</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-49.79645345930317" miny="-28.829150022649053" maxx="-49.78511102339829" maxy="-28.818915260769263"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="617433.625" miny="6810348.0" maxx="618529.0625" maxy="6811471.0"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=hidrografia_area_estudo"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
+				<Name>GH:projeto_mab_geomorfologia_poligono_v4</Name>
+				<Title>projeto_mab_geomorfologia_poligono_v4</Title>
+				<Abstract>GH:projeto_mab_geomorfologia_poligono_v4 ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:shp:::disabledownload:notListing::maxZoom:2</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-49.79645345930317" miny="-28.829150022649053" maxx="-49.78511102339829" maxy="-28.818915260769263"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="617433.625" miny="6810348.0" maxx="618529.0625" maxy="6811471.0"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=projeto_mab_geomorfologia_poligono_v4"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
 				<Name>GH:projeto_mab_geologia_v4</Name>
 				<Title>projeto_mab_geologia_v4</Title>
 				<Abstract>GH:projeto_mab_geologia_v4 ABSTRACT</Abstract>
 				<KeywordList>
-					<Keyword>group:shp:::disabledownload:notListing::maxZoom:7</Keyword>
+					<Keyword>group:shp:::disabledownload:notListing::maxZoom:2</Keyword>
 				</KeywordList>
 				<SRS>EPSG:4326</SRS>
 				<LatLonBoundingBox minx="-49.79645345930317" miny="-28.829150022649053" maxx="-49.78511102339829" maxy="-28.818915260769263"></LatLonBoundingBox>
@@ -337,7 +342,7 @@
 				<Title>mdt_area_estudo</Title>
 				<Abstract>GH:mdt_area_estudo ABSTRACT</Abstract>
 				<KeywordList>
-					<Keyword>group:tif:::disabledownload:notListing::maxZoom:7</Keyword>
+					<Keyword>group:tif:::disabledownload:notListing::maxZoom:2</Keyword>
 				</KeywordList>
 				<SRS>EPSG:4326</SRS>
 				<LatLonBoundingBox minx="-49.79955840526569" miny="-28.831876330290935" maxx="-49.78199164808152" maxy="-28.816182361800962"></LatLonBoundingBox>
